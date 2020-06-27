@@ -21,7 +21,7 @@
 # end
 
 def two_sum(arr, target_sum)
-    compliments = {}
+    complements = {}
     results = []
 
     arr.each_with_index do |num, idx|
@@ -29,7 +29,6 @@ def two_sum(arr, target_sum)
         results << [complements[stored_num], idx] if complements[stored_num]
         complements[num] = idx
       end
-    ​
       results
 end
 
